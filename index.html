@@ -13,6 +13,10 @@
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     
+    <!-- Preload Thmanyah Fonts for instant switching -->
+    <link rel="preload" href="./otf/thmanyahseriftext-Bold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="./otf/thmanyahseriftext-Regular.otf" as="font" type="font/otf" crossorigin>
+
     <style>
         /* Thmanyah Font Setup */
         @font-face {
@@ -41,7 +45,6 @@
             overflow: hidden;
             background-color: #030811; /* Deep dark blue */
             color: #ffffff;
-            transition: font-family 0.4s ease;
         }
 
         /* Font Classes */
@@ -146,7 +149,6 @@
             -webkit-text-fill-color: transparent;
             text-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
             animation: pulseGlow 4s infinite alternate;
-            transition: font-size 0.4s ease, letter-spacing 0.4s ease;
         }
 
         /* Font Specific Adjustments for H1 */
@@ -166,7 +168,6 @@
             max-width: 600px;
             line-height: 1.6;
             text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-            transition: font-size 0.4s ease;
         }
 
         /* Font Specific Adjustments for P */
